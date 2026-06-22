@@ -3,6 +3,11 @@ resource "aws_s3_bucket" "example_bucket" {
   bucket = var.bucket_name
 }
 
+# S3 Bucket
+resource "aws_s3_bucket" "example_bucket1" {
+  bucket = var.bucket_name1
+}
+
 
 # Versioning
 resource "aws_s3_bucket_versioning" "example_versioning" {
